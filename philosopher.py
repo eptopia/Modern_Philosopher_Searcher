@@ -1,3 +1,5 @@
+import random
+
 philosophers = {
     "프리드리히 니체" : {
         "quote" : "Gott ist tot",
@@ -17,7 +19,7 @@ while True :
     print("1. 철학자 목록")
     print("2. 철학자 이름으로 검색")
     print("3. 키워드로 검색")
-    print("4. 랜덤 철학자 정보")
+    print("4. 오늘의 철학자")
     print("5. 랜덤 명언")
     print("6. 프로그램 종료")
 
@@ -26,6 +28,7 @@ while True :
     if select == "6" :
         print("프로그램을 종료합니다.")
         break
+
     if select == "1" :
         print("==철학자 목록==")
         
@@ -47,3 +50,21 @@ while True :
             for concept in philosophers[name]["concept"] :
                 print(f" # {concept}")
             print()
+    
+    if select == "4" :
+        name = random.choice(list(philosophers.keys()))
+
+        print(f"\n- 이름 : {name}\n")
+
+        print(f"- 설명 :  {philosophers[name]["description"]}\n")
+
+        print("- 주요 개념")
+        for concept in philosophers[name]["concept"] :
+            print(f" # {concept}")
+        print()
+
+    if select == "5" :
+        name = random.choice(list(philosophers.keys()))
+
+        print(f'\n"{philosophers[name]['quote']}"')
+        print(f" - {name}\n")
