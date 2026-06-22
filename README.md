@@ -1,6 +1,7 @@
-<img width="1200" height="400" alt="616cbbb2f3977410b15f34b363dc4428b123fbd4" src="https://github.com/user-attachments/assets/b700c7bd-5cc7-4227-9cf7-219e16f9cf24" />
-
 ## Modern Philosopher Searcher
+
+
+<img width="1200" height="400" alt="616cbbb2f3977410b15f34b363dc4428b123fbd4" src="https://github.com/user-attachments/assets/b700c7bd-5cc7-4227-9cf7-219e16f9cf24" />
 
 이 프로그램은 Python으로 제작한 현대 철학자 검색 프로그램입니다. 철학자들은 시대적 흐름을 기준으로 정리하였으며, 서로 연관되는 사상과 개념을 중심으로 구성하였습니다.
 
