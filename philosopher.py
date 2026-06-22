@@ -1,5 +1,8 @@
 import random
 
+#철학자들의 딕셔너리
+#딕셔너리를 사용한 이유는 각 철학자에 대해 여러 정보를
+#하나의 구조로 묶어서 저장하기 위해서이다.
 philosophers = {
     "Arthur Schopenhauer" : {
         "quote" : "Life swings like a pendulum backward and forward between pain and boredom.",
@@ -53,6 +56,15 @@ philosophers = {
         }
 }
 
+'''
+다양한 사용자 입력을 정식 철학자 이름으로 매핑하기 위해 사용했다.
+
+기본적으로 영어 이름을 기준으로 하며,
+풀네임, 성, 이름 중 어느 방식으로 입력해도 검색 가능하도록 만들었다.
+
+한국어 입력은 별도로 수동 추가하였으며,
+새로운 철학자가 추가될 경우 같은 방식으로 확장할 수 있다.
+'''
 name_alias = {}
 
 for full_name in philosophers :
