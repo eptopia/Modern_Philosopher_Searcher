@@ -87,6 +87,7 @@ for full_name in philosophers :
     "하버마스": "Jürgen Habermas"
 })
 
+#메인 프로그램, 메뉴 선택 화면
 while True :    
     print("===== Modern Philosopher Searcher =====")
     print(f"  ===== 현재 추가된 철학자 : {len(philosophers)}명 =====")
