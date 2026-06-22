@@ -15,20 +15,23 @@ philosophers = {
 while True :    
     print("=====Modern Philosopher Searcher=====")
     print("1. 철학자 목록")
-    print("2. 철학자 정보 보기")
-    print("3. 이름으로 검색")
-    print("4. 키워드로 검색")
-    print("5. 랜덤 철학자 정보")
-    print("6. 랜덤 명언")
-    print("7. 프로그램 종료")
+    print("2. 철학자 이름으로 검색")
+    print("3. 키워드로 검색")
+    print("4. 랜덤 철학자 정보")
+    print("5. 랜덤 명언")
+    print("6. 프로그램 종료")
 
     select = input("메뉴 선택 : ")
 
-    if select == "7" :
+    if select == "6" :
         print("프로그램을 종료합니다.")
         break
     if select == "1" :
         print("==철학자 목록==")
         
-        for philosopher in philosophers :
-            print(philosopher)
+        for i, philosopher in enumerate(philosophers, start=1) :
+            print(f"{i}. {philosopher}")
+
+    if select == "2" :
+        print("철학자 이름 검색 : ")
+
