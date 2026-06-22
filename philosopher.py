@@ -90,13 +90,13 @@ for full_name in philosophers :
 #메인 프로그램, 메뉴 선택 화면
 while True :    
     print("===== Modern Philosopher Searcher =====")
-    print(f"  ===== 현재 추가된 철학자 : {len(philosophers)}명 =====")
+    print(f"===== 현재 추가된 철학자 : {len(philosophers)}명 =====")
     print("1. 철학자 목록")
     print("2. 철학자 이름으로 검색")
     print("3. 키워드로 검색")
     print("4. 오늘의 철학자")
     print("5. 랜덤 명언")
-    print("6. 프로그램 종료")
+    print("0. 프로그램 종료")
 
     select = input("메뉴 선택 : ")
 
@@ -165,12 +165,12 @@ while True :
         print(f'\n"{philosophers[name]['quote']}"')
         print(f" - {name}\n")
 
-#6. 프로그램 종료
-    elif select == "6" :
+#0. 프로그램 종료
+    elif select == "0" :
         print("프로그램을 종료합니다.")
         break
 
-# 1~6 제외 입력시 오류 출력 
+# 0~5 제외 입력시 오류 출력 
     else :
         print("잘못된 입력 시도입니다. 다시 시도해주세요.")
 
