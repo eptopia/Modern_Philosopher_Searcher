@@ -50,6 +50,20 @@ while True :
             for concept in philosophers[name]["concept"] :
                 print(f" # {concept}")
             print()
+
+    if select == "3" :
+
+        keyword = input("검색할 철학자의 개념 입력 : ")
+        exist = False
+
+        for philosopher in philosophers :
+                if keyword in philosophers[philosopher]["concept"] :
+                        print(f"\n => {philosopher}")
+                        print(f"\n - {philosophers[philosopher]['description']}\n")
+                        exist = True
+
+        if not exist :
+            print("검색 결과가 없습니다.")
     
     if select == "4" :
         name = random.choice(list(philosophers.keys()))
@@ -68,3 +82,7 @@ while True :
 
         print(f'\n"{philosophers[name]['quote']}"')
         print(f" - {name}\n")
+
+
+
+    
